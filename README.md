@@ -14,7 +14,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/desktop-preview.jpg)
+![](./src/images/screenshot.jpg)
 
 
 ### Links
