@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+  box-sizing: border-box;
+  --accent-color-alpha: hsla(150, 100%, 66%, 0.5);
+}
+
+body{
+  margin:0;
+  padding: 0;
+  background-color: hsl(218, 23%, 16%);
+  font-family: 'Manrope', sans-serif;
+  display: grid;
+place-items: center;
+min-height: 100vh;
+padding: 0 0.85rem;
+}
+
+.main-container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+  background-color: hsl(217, 19%, 24%);
+
+  max-width: 35rem;
+  padding: 2.5rem 2.25rem 4rem;
+  padding-bottom: 4rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  box-shadow: 0 0 8px 0 hsl(217, 19%, 24%);
+}
+
+.advice-id{
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 2px;
+  margin: 0 0 1.5rem 0;
+}
+
+
+.divider {
+  background: url("./images/pattern-divider-desktop.svg") top center/contain no-repeat;
+  width: 100%;
+height: 2rem;
+}
+
+.advice{
+  line-height: 1.4;
+margin: 0 0 1.95rem 0;
+color: hsl(193, 38%, 86%);
+}
+
+
+.btn {
+  background-color: hsl(150, 100%, 66%);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -8%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  animation-name: findProcess;
+  animation-duration: 2s;
+}
+
+.btn::before {
+  content: "";
+  box-shadow: 0 0 10px 0 var(--accent-color-alpha),
+    0 0 20px 0 var(--accent-color-alpha), 0 0 30px 0 var(--accent-color-alpha),
+    0 0 40px 0 var(--accent-color-alpha), 0 0 60px 0 var(--accent-color-alpha),
+    0 0 80px 0 var(--accent-color-alpha);
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.btn[disabled] {
+  cursor: not-allowed;
+}
+
+ .btn:hover {
+  background: rgb(87, 253, 170);
+}
+.btn:hover::before {
+  opacity: 1;
+}
+.btn img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.attribution {
+  align-self: end;
+  font-size: 0.75rem;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+  letter-spacing: 1px;
+  padding: 52rem 0 0 0;
+}
+a{
+  color: hsl(150, 100%, 66%);
+}
