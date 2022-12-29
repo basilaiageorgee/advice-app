@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/basilaiageorgee/advice-app)
-- Live Site URL: [Add live site URL here](https://basilaiageorgee.github.io/advice-app/)
+- Solution URL: [Click Here!](https://github.com/basilaiageorgee/advice-app)
+- Live Site URL: [Click Here!](https://basilaiageorgee.github.io/advice-app/)
 
 
 ### Built with
